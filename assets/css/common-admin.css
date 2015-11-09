@@ -1,0 +1,66 @@
+/********************* Regole per il "PUSH" *************************/
+/*** (tenere il footer in basso alla finestra nelle pagine corte) ***/
+html, body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+
+body .page-container,
+body .page-container .main-content {
+	height: 100%;
+/* 	padding: 50px 0 0 0; */
+}
+
+body .page-container .main-content section {
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	margin: 0 auto -4em;
+}
+
+footer, .push {
+	height: 4em;
+}
+/*******************************************************************/
+
+
+/********************* Regole per validazione form *************************/
+
+.form-group.has-error .input-group.minimal .form-control:focus {
+	border-color: #ffafbd;
+}
+
+.form-group.has-success .input-group.minimal .form-control:focus {
+	border-color: #b4e8a8;
+}
+
+/***************************************************************************/
+
+
+/*****************/
+/*** CONTENUTO ***/
+/*****************/
+
+.main-content .datatable .btn {
+	margin: 5px;
+}
+
+.main-content .datatable .btn-group .btn {
+	margin: inherit;
+}
+
+/*****************/
+
+
+/**************/
+/*** FOOTER ***/
+/**************/
+/*
+footer {
+	color: #ffffff;
+	padding: 20px 0 0 0;
+	background: #222;
+}
+*/
+/**************/

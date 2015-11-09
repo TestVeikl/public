@@ -1,0 +1,14 @@
+.vkl-form-object-list .radio-inline + .radio-inline,
+.vkl-form-object-list .checkbox-inline + .checkbox-inline {
+/* 	margin-left: 0 !important; */
+}
+
+.vkl-form-object-list .radio-inline,
+.vkl-form-object-list .checkbox-inline {
+/* 	margin-right: 10px; */
+}
+
+.vkl-form-object-list .radio-inline,
+.vkl-form-object-list .checkbox-inline {
+	margin-left: 15px !important;
+}

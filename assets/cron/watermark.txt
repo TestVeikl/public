@@ -1,0 +1,30 @@
+/watermarkText { (V e i k l . c o m) } def
+/watermarkFont { /Times-Roman 72 selectfont } def
+/watermarkColor { .75 setgray } def
+/watermarkAngle { 45 } def
+
+/pageWidth { currentpagedevice /PageSize get 0 get } def
+/pageHeight { currentpagedevice /PageSize get 1 get } def
+			
+<<
+	/EndPage {
+		2 eq { pop false } 
+		{
+			gsave
+			watermarkFont
+			watermarkColor
+			pageWidth .5 mul pageHeight .5 mul translate
+			0 0 moveto
+			watermarkText false charpath flattenpath pathbbox
+			4 2 roll pop pop
+			0 0 moveto
+			watermarkAngle rotate
+			.5 .setopacityalpha
+			-.5 mul exch -.5 mul exch
+			rmoveto
+			watermarkText show
+			grestore 
+			true 
+		} ifelse
+	} bind
+>> setpagedevice

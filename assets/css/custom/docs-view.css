@@ -1,0 +1,15 @@
+.portfolio-item-details {
+	padding: 0;
+}
+
+.portfolio-item-details .item-images .next-prev-nav a {
+	width: 26px;
+	height: 40px;
+	border-radius: 5px;
+}
+
+.doc-page-img {
+	display: inline-block !important;
+	cursor: url(../../images/cursors/zoom-16.cur);
+	cursor: url(../../images/cursors/zoom-16.png) 0 0, auto;
+}

@@ -1,0 +1,10 @@
+<IfModule mod_rewrite.c>
+        RewriteEngine On
+        RewriteBase /
+        
+        RewriteCond %{REQUEST_URI} ^(.*)assets/(.*)
+		RewriteRule ^(.*)assets/(.*)$ assets/$2 [L]
+
+        RewriteCond $1 !^(index\.php|info\.php|images|robots\.txt|assets|prove)
+		RewriteRule ^(.*)$ /index.php/$1 [L]
+</IfModule>
